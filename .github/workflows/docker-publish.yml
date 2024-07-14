@@ -102,7 +102,5 @@ jobs:
        steps:
        
        - name: Test the image
-         run: |
-           docker run ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main 
-           grep container && echo "TEST PASSED"
+         run: docker run ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main | grep container && echo "TEST PASSED"
   
