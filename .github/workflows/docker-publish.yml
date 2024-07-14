@@ -105,7 +105,7 @@ jobs:
        
        - name: Test the image
          run: |
-           docker run ${{env.REGISTRY}}/sachin-ade24/image:main
+           docker run ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
 
        - name: Test "Container" text
          uses: ast-grep/action@v1.4
