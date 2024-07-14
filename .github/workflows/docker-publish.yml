@@ -109,6 +109,4 @@ jobs:
 
        - name: Test "Container" text
          uses: ast-grep/action@v1.4
-         with:
-            path: . 
   
